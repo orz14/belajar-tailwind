@@ -3,15 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coba Tailwind</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <title>Belajar Tailwind</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold text-blue-600 underline">Hello world!</h1>
-    <a href="#" class="bg-green-500 p-3 text-white inline-block m-3 rounded shadow hover:bg-green-700">ini tombol</a>
-    <p class="m-3 bg-yellow-200">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias dolor impedit dolores voluptas tempora consequuntur similique minima mollitia sequi maxime adipisci enim, eos voluptate accusamus aperiam commodi veritatis
-      praesentium necessitatibus ipsum veniam fuga sed! Rem nesciunt minus maiores quibusdam voluptates beatae blanditiis. Mollitia eligendi earum quae illum non corrupti!
-    </p>
+    <h1 class="text-6xl font-bold text-center my-8">Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Tailwind</span></h1>
+
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 to-yellow-300">
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="pt-3">Padding</div>
+    </section>
+    <section class="mb-10 bg-green-200">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-orz">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+      <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Oriz Wahyu N</a>, 14 Juni 2023</div>
+      <p class="mb-4">
+        Lorem ipsum dolor <a href="#" class="underline font-semibold text-blue-600">sit amet</a> consectetur adipisicing elit. Quibusdam aperiam pariatur laborum voluptatem mollitia magnam similique nostrum architecto in soluta voluptatibus
+        tempore libero necessitatibus porro animi itaque sit, beatae maiores sed recusandae odit. Porro ad vel quaerat doloribus quibusdam eaque, rerum illo consequuntur? Reprehenderit laboriosam sint totam, doloremque eligendi debitis.
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dicta. Optio obcaecati consequuntur ipsum minus quam dolor! Rerum, cum eos."</blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio officia delectus voluptate est corrupti repellat tenetur odio magni assumenda quaerat, animi magnam quidem quae sapiente consequuntur ab porro tempore?
+      </p>
+    </section>
   </body>
 </html>
