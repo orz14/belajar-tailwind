@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
     <title>Belajar Tailwind</title>
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      #toggle:checked ~ label div.toggle-circle {
-        --tw-translate-x: 1rem /* 16px */;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      }
-    </style>
   </head>
   <body class="dark:bg-slate-800 dark:text-slate-200">
     <h1 class="text-6xl font-bold text-center my-8">Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Tailwind</span></h1>
@@ -41,7 +35,7 @@
       </p>
     </section>
 
-    <div class="max-w-xl h-96 bg-[#4e6cef] mx-auto mt-[42px] overflow-y-scroll bg-fixed" style="background-image: url('https://source.unsplash.com/1000x600?coding')">
+    <div class="max-w-xl h-96 bg-[#4e6cef] mx-auto mt-[42px] overflow-y-scroll bg-fixed text-white" style="background-image: url('./img/2.jpg')">
       <p class="p-5 text-2xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis laborum unde ad earum reiciendis libero ducimus, exercitationem assumenda minima dolores itaque, velit, dignissimos reprehenderit saepe fuga eaque laboriosam
         molestiae. Quaerat sequi quisquam at doloribus reprehenderit quod quam cumque, illum quo pariatur rem tempora sapiente ullam ab nostrum sint consequatur harum recusandae voluptatum magni tempore illo totam nihil. Sit numquam amet
@@ -57,7 +51,7 @@
       <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-sm rounded-full"></div>
     </div>
 
-    <hr class="my-20" />
+    <hr class="my-20 border-t-4" />
 
     <div class="flex justify-center">
       <span class="text-sm text-slate-500 mr-2">Light</span>
@@ -100,7 +94,7 @@
       </form>
     </div>
 
-    <hr class="my-20" />
+    <hr class="my-20 border-t-4" />
 
     <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg hover:scale-125 hover:rotate-12 hover:bg-pink-500 transition origin-top-left"></div>
 
@@ -109,6 +103,34 @@
     </div>
 
     <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg mt-20 animate-goyang"></div>
+
+    <hr class="my-20 border-t-4" />
+
+    <div class="container mx-auto p-5">
+      <div class="border rounded-lg shadow-lg p-10 relative">
+        <a href="#">
+          <div class="w-10 h-10 bg-sky-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer">
+            <span class="m-auto">▲</span>
+          </div>
+        </a>
+        <img class="float-left mr-3 rounded-xl" src="./img/2.jpg" width="150" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, illum maxime eligendi esse soluta, natus dolor tenetur quod quibusdam ipsa omnis, fuga impedit repudiandae! Beatae minus harum, id ratione reprehenderit libero culpa
+          adipisci rerum soluta doloremque! Quae molestiae eaque dolor nisi! Odio provident ipsum rem, corporis saepe libero dolorem consectetur!
+        </p>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-5">
+      <div class="mx-auto border rounded-lg shadow-lg p-10 columns-3">
+        <img src="./img/3.jpg" class="mb-4" />
+        <img src="./img/3.jpg" class="mb-4" />
+        <img src="./img/3.jpg" class="mb-4" />
+        <img src="./img/3.jpg" class="mb-4" />
+        <img src="./img/3.jpg" class="mb-4" />
+        <img src="./img/3.jpg" class="mb-4" />
+      </div>
+    </div>
 
     <div class="mb-96"></div>
     <script>
